@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "HFont";
+  src: url("./fonts/NokaTrial-Black.otf");
+}
+@font-face {
+  font-family: "PFont";
+  src: url("./fonts/Noka-Medium.otf");
+}
+
+@font-face {
+  font-family: "Chunk Black";
+  src: url("./fonts/ChunkFive-Black.otf");
+}
+@font-face {
+  font-family: "Chunk Regular";
+  src: url("./fonts/ChunkFive-Regular.otf");
+}
+html {
+  --scrollbarBG: #FFFFFF;
+  --thumbBG: rgba(2,65,105,1);
+}
+html {
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0;
+  /* color: white; */
+  /* background: linear-gradient(90deg, #2387a9 0%, #2A9EC5 30%, #2A9EC5 100%); */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  -webkit-user-drag: none;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 4px;
+  border: 3px solid var(--scrollbarBG);
+}
